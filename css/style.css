@@ -497,13 +497,25 @@ img {
 .site-header__arrow-scroll {
   width: 50px;
   height: 50px;
-  margin: 140px auto 0;
   border-radius: 50%;
   border: 1px solid #fff;
   background-image: url(../img/arrow-down.png);
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: center; }
+  background-position: center;
+  position: absolute;
+  bottom: 100px;
+  right: 50%;
+  margin-right: -25px; }
+  .site-header__arrow-scroll::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: #c3c4c6;
+    bottom: -100px;
+    left: 50%;
+    margin-left: -1px; }
 
 @media (min-width: 768px) {
   .my-header {

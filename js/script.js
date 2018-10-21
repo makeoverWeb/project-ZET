@@ -1,4 +1,7 @@
 $(function() {
+
+  //mmenu
+
   $('#my-menu').mmenu({
     extensions: [ 'widescreen', 'theme-dark', 'effect-menu-slide', 'pagedim-black' ],
     navbar: {
@@ -14,4 +17,35 @@ $(function() {
   }).bind('closed', function () {
     $('.hamburger').removeClass('is-active');
   });
+
+  //scroll
+
+  $('.go_to').click( function(){
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length != 0) {
+      $('html, body').animate({ scrollTop: $(scroll_el).offset().top}, 900);scroll_el
+    }
+    return false;
+  });
+
+  //slider
+
+   $('.owl-carousel').owlCarousel({
+    loop:true, //прокручивание элементов по кругу
+    margin: 50, //отступы межу элементами
+    nav:true, //отобразить элементы управления
+    responsive:{
+      0:{
+        items:1
+      }, //при ширине окна < 992 отображать 1 элемент
+      992:{
+        items:3
+      }  //при ширине окна > 992 отображать 3 элемент
+    }
+  });
+
+   //
+
+
+
   });

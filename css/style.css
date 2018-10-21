@@ -436,7 +436,8 @@ img {
 .block-title {
   margin: 0 auto 60px;
   padding: 0 50px;
-  text-align: center; }
+  text-align: center;
+  line-height: 24px; }
 
 .block-title__title {
   text-transform: uppercase;
@@ -455,6 +456,15 @@ img {
   height: 2px;
   margin: 0 auto;
   background-color: #303944; }
+
+.item {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
+.item img {
+  border-radius: 50%;
+  text-align: center; }
 
 .my-header {
   max-width: 420px;
@@ -617,11 +627,14 @@ img {
 .services__named {
   color: #303944;
   font-family: "ofont.ru_Montserrat";
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 20px 0 0; }
 
 .services__text {
   color: #7e8185;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-top: 0;
+  line-height: 24px; }
 
 @media (min-width: 768px) {
   .services__items {
@@ -652,11 +665,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .works__item {
   width: 50%;
-  height: 100px;
+  height: 150px;
   background-image: url(../img/works-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -699,3 +715,9 @@ img {
   .works__item {
     width: 20%;
     height: 200px; } }
+
+.happy-clients {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: auto;
+  padding-top: 100px; }

@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/jquery.mmenu.all.css">
   <link rel="stylesheet" href="css/hamburgers.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 <body>
   <div class="my-page">
@@ -66,11 +68,11 @@
         <h1 class="site-header__title">Something Nothing</h1>
         <p class="site-header__slogan">Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi eleifend tellus.</p>
         <button class="site-header__button button">LET’S TALK</button>
-        <div class="site-header__arrow-scroll"></div>
+        <a href="#about-us" class="site-header__arrow-scroll go_to"></a>
       </header>
     </div>
     <div class="my-content">
-      <div class="services">
+      <div class="services" id="about-us">
         <div class="block-title">
           <div class="block-title__title">Services</div>
           <div class="block-title__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</div>
@@ -123,11 +125,24 @@
           <div class="works__item"><a href="#" class="works__link"></a></div>
         </div>
       </div>
+      <div class="happy-clients">
+        <div class="block-title">
+          <div class="block-title__title">Works</div>
+          <p class="block-title__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+          <div class="block-title__line"></div>
+        </div>
+        <div class="owl-carousel">
+          <div class="item"><img src="img/clients.jpg" alt="client" width="50px"></div>
+          <div class="item"><img src="img/clients.jpg" alt="client" width="50px"></div>
+          <div class="item"><img src="img/clients.jpg" alt="client" width="50px"></div>
+        </div>
+      </div>
     </div>
     <div class="my-footer"></div>
   </div>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.mmenu.all.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

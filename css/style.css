@@ -373,12 +373,6 @@ th {
 
 @font-face {
   font-weight: normal;
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  src: url("../fonts/PTSansNarrow.woff2") format("woff2"), url("../fonts/PTSansNarrow.woff") format("woff"); }
-
-@font-face {
-  font-weight: normal;
   font-family: "ofont.ru_Montserrat";
   font-style: normal;
   src: url("../fonts/ofont.ru_Montserrat.woff") format("woff"); }
@@ -396,10 +390,10 @@ th {
   src: url("../fonts/OpenSansRegular.woff") format("woff"); }
 
 @font-face {
-  font-weight: bold;
-  font-family: "PT Sans Narrow";
+  font-weight: normal;
+  font-family: "OpenSansExtraBold";
   font-style: normal;
-  src: url("../fonts/PTSansNarrowBold.woff2") format("woff2"), url("../fonts/PTSansNarrowBold.woff") format("woff"); }
+  src: url("../fonts/OpenSansExtraBold.woff") format("woff"); }
 
 body {
   min-width: 320px;
@@ -439,17 +433,51 @@ img {
   margin: 0 auto;
   font-size: 14px; }
 
+.block-title {
+  margin: 0 auto 60px;
+  padding: 0 50px;
+  text-align: center; }
+
+.block-title__title {
+  text-transform: uppercase;
+  font-family: "OpenSansExtraBold";
+  color: #303944; }
+
+.block-title__text {
+  color: #7e8185;
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  margin-bottom: 10px;
+  margin-top: 0; }
+
+.block-title__line {
+  width: 40px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #303944; }
+
 .my-header {
   max-width: 420px;
   min-width: 320px;
   height: 100vh;
-  margin: 0 auto;
   margin: 0 auto;
   position: relative;
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+.my-content {
+  max-width: 420px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative; }
+
+.my-footer {
+  max-width: 420px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative; }
 
 .site-header {
   background-color: rgba(124, 133, 142, 0.5);
@@ -520,11 +548,154 @@ img {
 @media (min-width: 768px) {
   .my-header {
     max-width: 768px; }
+  .my-content {
+    max-width: 768px; }
+  .my-footer {
+    max-width: 768px; }
   .site-header__slogan {
     padding: 0 100px; } }
 
 @media (min-width: 1200px) {
   .my-header {
     max-width: 1163px; }
+  .my-content {
+    max-width: 1163px; }
+  .my-footer {
+    max-width: 1163px; }
   .site-header__slogan {
     padding: 0 220px; } }
+
+.services {
+  background-color: #f5f5f5;
+  height: auto;
+  padding-top: 100px; }
+
+.services__items {
+  width: auto;
+  padding: 0 80px 50px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.services__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+  margin-bottom: 20px; }
+  .services__item:nth-child(2) .services__img {
+    background-image: url(../img/services-item2.png); }
+  .services__item:nth-child(3) .services__img {
+    background-image: url(../img/services-item3.png); }
+  .services__item:nth-child(4) .services__img {
+    background-image: url(../img/services-item4.png); }
+
+.services__img {
+  background-color: #303944;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-size: auto;
+  background-position: center;
+  background-image: url(../img/services-item1.png);
+  background-repeat: no-repeat; }
+
+.services__named {
+  color: #303944;
+  font-family: "ofont.ru_Montserrat";
+  font-weight: bold; }
+
+.services__text {
+  color: #7e8185;
+  font-size: 14px; }
+
+@media (min-width: 768px) {
+  .services__items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (min-width: 1200px) {
+  .services__item {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%; } }
+
+.works {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding-top: 100px; }
+
+.works-items {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.works__item {
+  width: 50%;
+  height: 100px;
+  background-image: url(../img/works-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .works__item:nth-child(2) {
+    background-image: url(../img/works-2.jpg); }
+  .works__item:nth-child(3) {
+    background-image: url(../img/works-3.jpg); }
+  .works__item:nth-child(4) {
+    background-image: url(../img/works-4.jpg); }
+  .works__item:nth-child(5) {
+    background-image: url(../img/works-5.jpg); }
+  .works__item:nth-child(6) {
+    background-image: url(../img/works-6.jpg); }
+  .works__item:nth-child(7) {
+    background-image: url(../img/works-7.jpg); }
+  .works__item:nth-child(8) {
+    background-image: url(../img/works-8.jpg); }
+  .works__item:nth-child(9) {
+    background-image: url(../img/works-9.jpg); }
+  .works__item:nth-child(10) {
+    background-image: url(../img/works-10.jpg); }
+  .works__item:nth-child(11) {
+    background-image: url(../img/works-11.jpg); }
+  .works__item:nth-child(12) {
+    background-image: url(../img/works-12.jpg); }
+  .works__item:nth-child(13) {
+    background-image: url(../img/works-13.jpg); }
+  .works__item:nth-child(14) {
+    background-image: url(../img/works-14.jpg); }
+  .works__item:nth-child(15) {
+    background-image: url(../img/works-15.jpg); }
+
+@media (min-width: 768px) {
+  .works__item {
+    width: 25%;
+    height: 150px; } }
+
+@media (min-width: 1200px) {
+  .works__item {
+    width: 20%;
+    height: 200px; } }

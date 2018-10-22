@@ -428,13 +428,16 @@ img {
   height: 35px;
   background-color: transparent;
   border-radius: 20px;
-  border: 1px solid #fff;
+  border: 1px solid #f2f2f2;
+  font-family: "ofont.ru_Montserrat";
+  color: #e8e8e8;
   display: block;
   margin: 0 auto;
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 14px; }
 
 .block-title {
-  margin: 0 auto 60px;
+  margin: 0 auto 40px;
   padding: 0 50px;
   text-align: center;
   line-height: 24px; }
@@ -444,6 +447,9 @@ img {
   font-family: "OpenSansExtraBold";
   color: #303944; }
 
+.block-title__title--team {
+  color: #f2f2f2; }
+
 .block-title__text {
   color: #7e8185;
   font-size: 14px;
@@ -451,20 +457,17 @@ img {
   margin-bottom: 10px;
   margin-top: 0; }
 
+.block-title__text--team {
+  color: #dcddde; }
+
 .block-title__line {
   width: 40px;
   height: 2px;
   margin: 0 auto;
   background-color: #303944; }
 
-.item {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto; }
-
-.item img {
-  border-radius: 50%;
-  text-align: center; }
+.block-title__line--team {
+  background-color: #dcddde; }
 
 .my-header {
   max-width: 420px;
@@ -578,7 +581,7 @@ img {
 .services {
   background-color: #f5f5f5;
   height: auto;
-  padding-top: 100px; }
+  padding-top: 60px; }
 
 .services__items {
   width: auto;
@@ -654,7 +657,7 @@ img {
   background-color: #fff;
   width: 100%;
   height: auto;
-  padding-top: 100px; }
+  padding-top: 60px; }
 
 .works-items {
   width: 100%;
@@ -704,20 +707,274 @@ img {
   .works__item:nth-child(14) {
     background-image: url(../img/works-14.jpg); }
   .works__item:nth-child(15) {
+    display: none;
     background-image: url(../img/works-15.jpg); }
 
 @media (min-width: 768px) {
   .works__item {
     width: 25%;
-    height: 150px; } }
+    height: 150px; }
+    .works__item:nth-child(15) {
+      display: block;
+      width: 33.3%; }
+    .works__item:nth-child(14) {
+      width: 33.3%; }
+    .works__item:nth-child(13) {
+      width: 33.3%; } }
 
 @media (min-width: 1200px) {
   .works__item {
     width: 20%;
-    height: 200px; } }
+    height: 200px; }
+    .works__item:nth-child(15) {
+      width: 20%; }
+    .works__item:nth-child(14) {
+      width: 20%; }
+    .works__item:nth-child(13) {
+      width: 20%; } }
 
 .happy-clients {
   background-color: #f5f5f5;
   width: 100%;
   height: auto;
-  padding-top: 100px; }
+  padding-top: 60px; }
+
+.item {
+  width: 100%;
+  margin: 0 auto; }
+
+.owl-carousel__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: url(../img/clients.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.owl-carousel__text {
+  color: #434d59;
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 0; }
+
+.owl-carousel__quote {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 15px;
+  background-image: url(../img/quote.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.owl-carousel__client-name {
+  color: #303944;
+  font-family: "ofont.ru_Montserrat";
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 0; }
+
+.owl-carousel__client-profile {
+  color: #303944;
+  font-family: "OpenSansRegular";
+  text-align: center;
+  font-size: 14px;
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .owl-carousel__text {
+    padding: 0 50px; } }
+
+.team {
+  background-image: url(../img/team-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto; }
+
+.team-wrap {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  background-color: rgba(124, 133, 142, 0.5); }
+
+.team-items {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 80px auto 90px; }
+
+.team__item {
+  width: 200px;
+  height: 300px;
+  background-color: #c9ced0;
+  margin-bottom: 40px;
+  padding-bottom: 20px; }
+
+.team__name {
+  color: #303944;
+  font-family: "ofont.ru_Montserrat";
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px; }
+
+.team__profile {
+  color: #565d64;
+  font-family: "ofont.ru_Montserrat";
+  text-align: center;
+  font-size: 14px; }
+
+.team__socials {
+  width: 60%;
+  height: auto;
+  margin: 10px auto 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.team__social {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block; }
+
+.team__social--tw {
+  background-image: url(../img/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.team__social--in {
+  background-image: url(../img/in.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.team__social--v {
+  background-image: url(../img/social-v.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.team__social--dribble {
+  background-image: url(../img/social-dribble.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.team__social--mail {
+  background-image: url(../img/social-mail.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.team__button {
+  width: 200px; }
+
+@media (min-width: 768px) {
+  .team-items {
+    width: 70%; } }
+
+@media (min-width: 1200px) {
+  .team-items {
+    width: 80%; } }
+
+.brands {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.pricing-table {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding-top: 60px; }
+
+.pricing-table__proposals {
+  width: 80%;
+  height: auto;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto; }
+
+.pricing-table__proposal {
+  border: 1px solid #eee;
+  width: 100%;
+  margin: 20px; }
+
+.pricing-table__header {
+  border-bottom: 1px solid #eee; }
+
+.pricing-table__product-name {
+  color: #303944;
+  font-family: "ofont.ru_Montserrat";
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px; }
+
+.pricing-table__product-price {
+  color: #303944;
+  font-family: "ofont.ru_Montserrat";
+  text-align: center;
+  font-size: 30px; }
+
+.pricing-table__product-month {
+  color: #bdbfc1;
+  font-family: "OpenSansLight";
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px; }
+
+.pricing-table__text {
+  width: 80%;
+  height: 250px;
+  color: #303944;
+  text-align: center;
+  margin: 20px auto 0;
+  font-family: "OpenSansLight";
+  line-height: 26px; }
+
+.pricing-table__button {
+  background-color: #303944;
+  color: #fff;
+  margin-bottom: 20px; }
+
+@media (min-width: 768px) {
+  .pricing-table__proposal {
+    width: 80%; } }
+
+@media (min-width: 1200px) {
+  .pricing-table__proposal {
+    width: 28%; } }

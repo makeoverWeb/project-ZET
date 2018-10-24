@@ -33,6 +33,9 @@ $(function() {
    $('.owl-carousel').owlCarousel({
     loop:true, //прокручивание элементов по кругу
     margin: 50, //отступы межу элементами
+    autoplay:true, //Автозапуск слайдера
+    smartSpeed:1000, //Время движения слайда
+    autoplayTimeout:2000, //Время смены слайда
     nav:true, //отобразить элементы управления
     responsive:{
       0:{

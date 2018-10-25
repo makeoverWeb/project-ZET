@@ -473,6 +473,7 @@ img {
   max-width: 420px;
   min-width: 320px;
   height: 100vh;
+  max-height: 620px;
   margin: 0 auto;
   position: relative;
   background-image: url(../img/header-bg.jpg);
@@ -902,14 +903,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
 .brands__brand {
   padding: 20px;
-  width: 40%; }
+  width: 30%;
+  text-align: center; }
 
 @media (min-width: 768px) {
   .brands__brand {
@@ -923,7 +926,11 @@ img {
   background-color: #fff;
   width: 100%;
   height: auto;
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 40px; }
+
+.pricing-table__block-title {
+  margin-bottom: 80px; }
 
 .pricing-table__proposals {
   width: 80%;
@@ -944,7 +951,14 @@ img {
 .pricing-table__proposal {
   border: 1px solid #eee;
   width: 100%;
-  margin: 20px; }
+  margin-bottom: 30px; }
+  .pricing-table__proposal:nth-child(1) {
+    margin-bottom: 70px; }
+  .pricing-table__proposal:nth-child(2) {
+    margin-top: -40px; }
+    .pricing-table__proposal:nth-child(2) .pricing-table__header {
+      padding-top: 40px;
+      border-top: 4px solid #303944; }
 
 .pricing-table__header {
   border-bottom: 1px solid #eee; }
@@ -987,8 +1001,133 @@ img {
 
 @media (min-width: 768px) {
   .pricing-table__proposal {
-    width: 80%; } }
+    width: 60%; } }
 
 @media (min-width: 1200px) {
   .pricing-table__proposal {
-    width: 28%; } }
+    width: 33%; }
+    .pricing-table__proposal:nth-child(1) {
+      margin-bottom: 30px; } }
+
+.my-footer {
+  width: 100%;
+  height: auto;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.my-footer__map {
+  width: 100%;
+  position: relative;
+  height: 350px;
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.my-footer__marker {
+  background-image: url(../img/marker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -60px;
+  left: 50%; }
+
+.my-footer__form {
+  width: 100%;
+  height: 350px;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.my-footer__form-wrap {
+  background-color: rgba(53, 56, 59, 0.7);
+  height: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.site-form {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "ofont.ru_Montserrat", sans-serif;
+  font-size: 14px;
+  color: #f6f6f6; }
+
+.site-form__list {
+  list-style-type: none;
+  margin: 0 20px;
+  padding: 0; }
+
+.site-form__label {
+  margin-right: 20px; }
+
+.site-form__input {
+  background-color: transparent;
+  border: 1px solid #b8babd;
+  border-radius: 4px;
+  height: 30px;
+  width: 200px; }
+
+.site-item {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px; }
+  .site-item:nth-child(5) {
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: right;
+    width: 100%; }
+
+.site-form__submit {
+  width: 100px;
+  font-size: 14px; }
+
+@media (min-width: 768px) {
+  .my-footer__marker {
+    background-size: 80%; }
+  .my-footer__map {
+    height: 450px; }
+  .my-footer__form {
+    height: 450px; }
+  .site-form {
+    font-size: 16px; }
+  .site-form__list {
+    margin: 0 100px; }
+  .site-form__input {
+    height: 45px;
+    width: 300px; }
+  .site-form__submit {
+    width: 100px;
+    font-size: 14px; } }
+
+@media (min-width: 1200px) {
+  .my-footer__marker {
+    background-size: 80%; }
+  .my-footer__map {
+    width: 50%; }
+  .my-footer__form {
+    width: 50%; } }

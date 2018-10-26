@@ -1024,7 +1024,7 @@ img {
 .my-footer__map {
   width: 100%;
   position: relative;
-  height: 350px;
+  height: 400px;
   background-image: url(../img/map.jpg);
   background-size: cover;
   background-position: center; }
@@ -1044,7 +1044,7 @@ img {
 
 .my-footer__form {
   width: 100%;
-  height: 350px;
+  height: 400px;
   background-image: url(../img/footer-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1085,6 +1085,9 @@ img {
   height: 30px;
   width: 200px; }
 
+.site-form__input--4 {
+  height: 100px; }
+
 .site-item {
   display: -moz-flex;
   display: -ms-flex;
@@ -1106,13 +1109,102 @@ img {
   width: 100px;
   font-size: 14px; }
 
+.my-footer__contacts {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #303944;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f5f5f5;
+  font-size: 14px; }
+
+.my-footer__license {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; }
+
+.my-footer__rights {
+  display: inline-block;
+  vertical-align: top; }
+
+.my-footer__logo {
+  width: 85px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 20px;
+  background-image: url(../img/logo-footer.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.my-footer__networks {
+  width: 100%;
+  height: auto;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.my-footer__socials {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.my-footer__touch {
+  display: inline-block;
+  margin-right: 20px; }
+
+.my-footer__social-link {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  background-image: url(../img/fb-footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px; }
+
+.my-footer__social-link--tw {
+  background-image: url(../img/tw-footer.png); }
+
+.my-footer__social-link--google {
+  background-image: url(../img/google-footer.png); }
+
+.my-footer__social-link--dribble {
+  background-image: url(../img/dribble-footer.png); }
+
 @media (min-width: 768px) {
   .my-footer__marker {
     background-size: 80%; }
   .my-footer__map {
-    height: 450px; }
+    height: 550px; }
   .my-footer__form {
-    height: 450px; }
+    height: 550px; }
   .site-form {
     font-size: 16px; }
   .site-form__list {
@@ -1120,6 +1212,8 @@ img {
   .site-form__input {
     height: 45px;
     width: 300px; }
+  .site-form__input--4 {
+    height: 150px; }
   .site-form__submit {
     width: 100px;
     font-size: 14px; } }
@@ -1130,4 +1224,14 @@ img {
   .my-footer__map {
     width: 50%; }
   .my-footer__form {
-    width: 50%; } }
+    width: 50%; }
+  .my-footer__license {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .my-footer__networks {
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }

@@ -677,6 +677,8 @@ img {
 .works__item {
   width: 50%;
   height: 150px; }
+  .works__item:hover {
+    background-color: rgba(110, 117, 124, 0.7); }
   .works__item:nth-child(2) .works__link {
     background-image: url(../img/works-2.jpg); }
   .works__item:nth-child(3) .works__link {
@@ -712,31 +714,26 @@ img {
 
 .works__link--title {
   opacity: 0;
-  text-decoration: none;
+  width: 100%;
+  height: 150px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  margin-top: 50px; }
-
-.works__link--span {
-  opacity: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #f5f5f5; }
+  margin: 0;
+  padding-top: 50px; }
+  .works__link--title:hover {
+    opacity: 1;
+    background-color: rgba(110, 117, 124, 0.7); }
 
 .works__link {
   width: 100%;
-  height: 150px;
+  height: auto;
   display: block;
   background-image: url(../img/works-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
-  .works__link:hover .works__link--title {
-    opacity: 1;
-    background-color: rgba(110, 117, 124, 0.7); }
-  .works__link:hover .works__link--span {
-    opacity: 1; }
+  background-position: center;
+  text-decoration: none; }
 
 @media (min-width: 768px) {
   .works__item {

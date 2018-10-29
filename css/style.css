@@ -425,10 +425,9 @@ img {
 
 .white-popup {
   position: relative;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
   padding: 30px;
-  max-width: 400px;
-  width: 100%;
+  max-width: 320px;
   height: 100%;
   margin: 0 auto; }
 

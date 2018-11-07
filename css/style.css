@@ -598,21 +598,21 @@ img {
 
 @media (min-width: 768px) {
   .my-header {
-    max-width: 768px; }
+    max-width: 100%; }
   .my-content {
-    max-width: 768px; }
+    max-width: 100%; }
   .my-footer {
-    max-width: 768px; }
+    max-width: 100%; }
   .site-header__slogan {
     padding: 0 100px; } }
 
 @media (min-width: 1200px) {
   .my-header {
-    max-width: 1163px; }
+    max-width: 100%; }
   .my-content {
-    max-width: 1163px; }
+    max-width: 100%; }
   .my-footer {
-    max-width: 1163px; }
+    max-width: 100%; }
   .site-header__slogan {
     padding: 0 220px; } }
 
